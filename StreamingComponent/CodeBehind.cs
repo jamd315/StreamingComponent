@@ -41,19 +41,6 @@ namespace StreamingComponent
             base.OnPropertyValueChanged(component, changedProperty, oldValue);
         }
 
-        /// <summary>
-        /// Called when the value of an I/O signal value has changed.
-        /// </summary>
-        /// <param name="component"> Component that owns the changed signal. </param>
-        /// <param name="changedSignal"> Changed signal. </param>
-        public override void OnIOSignalValueChanged(SmartComponent component, IOSignal changedSignal)
-        {
-            if (changedSignal.Name.Equals("MySignal"))
-            {
-                Logger.AddMessage(new LogMessage("Oh hey"));
-            }
-        }
-
         public override void OnSimulationStart(SmartComponent component)
         {
             Logger.AddMessage(new LogMessage("StreamingComponent starting"));

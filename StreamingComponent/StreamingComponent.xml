@@ -20,9 +20,6 @@
 			</Properties>
 			<Bindings>
 			</Bindings>
-			<Signals>
-				<IOSignal name="MySignal" signalType="DigitalInput"/>
-			</Signals>
 			<GraphicComponents>
 			</GraphicComponents>
 			<Assets>
