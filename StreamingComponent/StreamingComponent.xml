@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lc:LibraryCompiler xmlns:lc="urn:abb-robotics-robotstudio-librarycompiler"
+										xmlns="urn:abb-robotics-robotstudio-graphiccomponent"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:abb-robotics-robotstudio-librarycompiler file:///C:\Program%20Files%20(x86)\ABB%20Industrial%20IT\Robotics%20IT\SDK\RobotStudio%20SDK%206.08\LibraryCompilerSchema.xsd
+                                        urn:abb-robotics-robotstudio-graphiccomponent file:///C:\Program%20Files%20(x86)\ABB%20Industrial%20IT\Robotics%20IT\SDK\RobotStudio%20SDK%206.08\GraphicComponentSchema.xsd">
+	<lc:Library fileName="StreamingComponent.rslib">
+		<lc:DocumentProperties>
+			<lc:Author>lizar</lc:Author>
+			<lc:Image source="StreamingComponent.png"/>
+		</lc:DocumentProperties>
+		<SmartComponent name="StreamingComponent" icon="StreamingComponent.png"
+										codeBehind="StreamingComponent.CodeBehind,StreamingComponent.dll"
+										canBeSimulated="true">
+			<Properties>
+				<DynamicProperty name="Port" valueType="System.Int32" value="5000">
+					<Attribute key="MinValue" value="1024"/>
+          <Attribute key="MaxValue" value="65535"/>
+				</DynamicProperty>
+			</Properties>
+			<Bindings>
+			</Bindings>
+			<Signals>
+				<IOSignal name="MySignal" signalType="DigitalInput"/>
+			</Signals>
+			<GraphicComponents>
+			</GraphicComponents>
+			<Assets>
+				<Asset source="StreamingComponent.dll"/>
+			</Assets>
+		</SmartComponent>
+	</lc:Library>
+</lc:LibraryCompiler>
